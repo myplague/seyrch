@@ -1,0 +1,32 @@
+{
+  "name": "seyrch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizzareyes13/seyrch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lizzareyes13/seyrch/issues"
+  },
+  "homepage": "https://github.com/lizzareyes13/seyrch#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "oath": "^1.0.0",
+    "oauth": "^0.9.14",
+    "request": "^2.78.0",
+    "yelp": "^1.0.1"
+  }
+}
