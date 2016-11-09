@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personalized Yelp</title>
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="search-box">
+            <h1 class="title">Search</h1>
+            <input type="text" id="search-input">
+            <button type="button" id="btn">Send</button>
+
+        </div>
+        <div id="results"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script>
+        $("#btn").click(function() {
+            var searchTerm = $("#search-input").val();
+            $.ajax({
+                url: 'http://localhost:3000/seyrch/miami/' + searchTerm,
+                success: function(res) {
+                    console.log(res);
+                    var arr = res.businesses;
+                    for (var i = 0; i < arr.length; i++) {
+                      $("#results").append("<img class='thumbnail' src='"+  arr[i].image_url+"' />")
+                        $("#results").append("<h3>" + arr[i].name+" : "+ arr[i].phone + "</h3>")
+                    }
+
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

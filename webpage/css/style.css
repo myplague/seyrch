@@ -1,0 +1,57 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+p, div, h1, h2, h3, h4, h5 {
+  font-family: 'Coiny', cursive;
+}
+h3{
+  text-align: center;
+
+}
+.thumbnail{
+  margin: 0 auto;
+  display: block;
+  margin-top: 1rem;
+
+}
+.app-container{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+.search-box{
+  width: 275px;
+  min-height: 50px;
+  background-color: #32EDDA;
+  margin: 0 auto;
+  padding: 1rem;
+  position: relative;
+  top: 50%;
+  transform: traslateY(-50%);
+
+  /*#e8e8e8*/
+}
+.title{
+  margin:0;
+  text-align: center;
+}
+#search-input{
+  font-size: 1.25rem;
+  font-family: 'Coiny', cursive;
+  line-height: 1.5rem;
+  border: none;
+  width: 90%;
+  display: block;
+  margin: 2rem auto;
+  box-shadow: 1px 1px 3px 1px #787878;
+  padding: 0 5px;
+}
+#btn{
+  padding: 0.25rem 2rem;
+  font-family: 'Coiny', cursive;
+  font-size: 1rem;
+  display: block;
+  margin: 0 0 0 auto;
+}
